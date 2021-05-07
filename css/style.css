@@ -1,0 +1,204 @@
+/* Mise en forme générale */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(245, 245, 245);
+  color: #333;
+  /* font-family: arial, Verdana, sans-serif; */
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.25;
+}
+/* Mise en forme des images */
+img {
+  width: 100%;
+  height: auto;
+}
+/* Mise en place du header et de la navigation */
+header {
+  color: white;
+  background-color: rgba(163, 203, 77, 0.9);
+  padding-bottom: 1px;
+}
+/* ----------------------------------- BANNER ---------------------------- */
+header div {
+  border: 1px solid black;
+  height: 25vh;
+  background-image: url(../img/banner-01.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
+  background-position: center;
+}
+header ul {
+  text-align: center;
+}
+header nav li {
+  margin: 12px;
+  list-style: none;
+  display: inline-block;
+}
+/* ------------------------------------- LINK ------------------------------ */
+header nav li a {
+  font-size: 1.4em;
+  font-weight: 600; /*poids de la police*/
+  padding: 7px;
+  color: rgb(255, 255, 255);
+}
+/* ---------------------------------- HOVER ---------------------------------- */
+header nav li a:hover {
+  color: rgb(186, 247, 54);
+  background-color: rgba(0, 0, 0, 0.5);
+  /* -webkit-animation: flip-2-hor-top-1 0.5s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: flip-2-hor-top-1 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; */
+  transition: 2s;
+}
+p {
+  margin-bottom: 12px;
+}
+main {
+  padding: 24px 18px;
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: rgb(235, 235, 235);
+}
+main h1 {
+  color: #214567;
+  padding-bottom: 24px;
+  border-bottom: 1px dashed #214567;
+  font-size: 2.6em;
+  font-weight: 800;
+  margin-bottom: 24px;
+  text-align: center;
+}
+main p {
+  text-align: justify;
+}
+main h1 {
+  color: #214567;
+  padding-bottom: 24px;
+  border-bottom: 1px dashed #214567;
+  font-size: 2.6em;
+  font-weight: 800;
+  margin-bottom: 24px;
+  text-align: center;
+}
+main h2 {
+  font-size: 1.6em;
+  font-weight: 300;
+  margin-bottom: 18px;
+  color: #fff;
+  background-color: #214567;
+  padding: 7px;
+}
+main h3 {
+  font-size: 1.6em;
+  margin-bottom: 12px;
+}
+main article {
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+}
+/* ------------- LISE EN PLACE DE LA GALLERIE D'IMAGES -------------------- */
+main figure {
+  margin-bottom: 12px;
+}
+main figcaption {
+  color: rgb(242, 242, 242);
+  background-color: #383b3f;
+  padding: 7px;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9em;
+}
+/* -------------------- MISE EN PLACE DU FOOTER ------------------- */
+footer {
+  color: rgb(217, 217, 217);
+  background-color: rgb(64, 64, 64);
+  padding: 24px 18px;
+  text-align: center;
+}
+footer h3 {
+  font-size: 1.2em;
+  margin-bottom: 12px;
+  color: white;
+}
+/* ------------------------- CLASS ------------------------ */
+.souligne {
+  text-decoration: underline;
+}
+.majuscule {
+  text-transform: uppercase;
+}
+@media screen and (min-width: 780px) {
+  .flexing {
+    display: flex;
+  }
+  /* ------------------------- ID --------------------------- */
+  #gallery {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #gallery figure {
+    width: 47.5%;
+  }
+}
+/* --------------------------TABLE------------------------- */
+
+table {
+  width: auto;
+  text-align: center;
+  margin: 12px auto;
+  border-bottom: 2px solid rgba(163, 203, 77, 0.9);
+  border-collapse: collapse;
+  box-shadow: 0px 12px 50px rgba(5, 5, 5, 0.2);
+}
+thead {
+  background-color: rgba(163, 203, 77, 0.9);
+}
+th,
+td {
+  padding: 15px 20px;
+}
+table div {
+  width: 100;
+}
+
+/* ------------------------FORM--------------------------- */
+main form div button {
+  text-align: center;
+}
+textarea {
+  width: 100%;
+  border: 2px solid #214767;
+  border-radius: 5px;
+}
+.tableau {
+  overflow-x: scroll;
+}
+.center {
+  text-align: center;
+  margin: 20px;
+}
+/* ------------------------BUTTON------------------------- */
+.valid {
+  border: none;
+  border-radius: 5px;
+  width: 10vw auto;
+  background-color: rgba(163, 203, 77, 0.9);
+  color: #214767;
+  padding: 12px 50px;
+  font-size: 1.1em;
+  margin: 10px;
+}
+.valid:hover {
+  background-color: #214767;
+  color: rgba(163, 203, 77, 0.9);
+  /* padding: 15px 53px;
+  font-size: 1.2em;
+  transition: 0.5s ease-in; */
+  transform: scale(1.1);
+}
