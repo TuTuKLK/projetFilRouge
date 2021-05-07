@@ -27,7 +27,7 @@ header {
 header div {
   border: 1px solid black;
   height: 25vh;
-  background-image: url(../img/banner-01.jpg);
+  background-image: url(img/banner-01.jpg);
   background-repeat: no-repeat;
   background-size: 100vw auto;
   background-position: center;
