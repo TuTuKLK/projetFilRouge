@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mon premier site web</title>
+    <meta
+      name="description"
+      content="Ceci est mon premier site internet créer lors de ma formation"
+    />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <!-- cette div est vide car elle va nous servir à ajouter une image en css -->
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a
+              class="flip-2-hor-top-1"
+              href="index.html"
+              title="Aller à la page"
+              >Accueil</a
+            >
+          </li>
+          <li>
+            <a
+              class="flip-2-hor-top-1"
+              href="contact.html"
+              title="Aller à la page"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              class="flip-2-hor-top-1"
+              href="https://www.interface3namur.be/"
+              title="Aller sur le site"
+              target="_blank"
+              >Interface3.Namur</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Contact</h1>
+      <section>
+        <!-- planing -->
+        <h2>Horaire</h2>
+        <h3>Mes disponibilités</h3>
+        <div class="tableau">
+          <table>
+            <thead>
+              <tr>
+                <td></td>
+                <th>Lundi</th>
+                <th>Mardi</th>
+                <th>Mercredi</th>
+                <th>Jeudi</th>
+                <th>Vendredi</th>
+                <th>Samedi</th>
+                <th>Dimanche</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Matin</th>
+                <td>Dispo</td>
+                <td>Dispo</td>
+                <td>Dispo</td>
+                <td>Dispo</td>
+                <td>Dispo</td>
+                <td>Dispo</td>
+                <td>Non Dispo</td>
+              </tr>
+              <tr>
+                <th>Soir</th>
+                <td>Dispo</td>
+                <td>Dispo</td>
+                <td>Dispo</td>
+                <td>Dispo</td>
+                <td>Dispo</td>
+                <td>Dispo</td>
+                <td>Non Dispo</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <!-- Formulaire -->
+        <h2>Formulaire de contact</h2>
+        <form action="#" method="POST">
+          <div>
+            <!-- mail -->
+            <label for="mail">Votre adresse e-mail</label>
+            <input
+              type="text"
+              name="mail"
+              id="mail"
+              placeholder="tuto@tuto.com"
+              required
+            />
+            <br />
+            <!-- menu déroulant -->
+            <label for="rdv">Je désire prendre rendez-vous le :</label>
+            <select name="planing" id="rdv" required>
+              <!-- <option value="" checked>Choisissez une demi-journée</option> -->
+
+              <optgroup label="Lundi">
+                <option value="Matin">Matin</option>
+                <option value="soir">Soir</option>
+              </optgroup>
+              <optgroup label="Mardi">
+                <option value="Matin">Matin</option>
+                <option value="soir">Soir</option>
+              </optgroup>
+              <optgroup label="Mercredi">
+                <option value="Matin">Matin</option>
+                <option value="soir">Soir</option>
+              </optgroup>
+              <optgroup label="Jeudi">
+                <option value="Matin">Matin</option>
+                <option value="soir">Soir</option>
+              </optgroup>
+              <optgroup label="Vendredii">
+                <option value="Matin">Matin</option>
+                <option value="soir">Soir</option>
+              </optgroup>
+              <optgroup label="Samedi">
+                <option value="Matin">Matin</option>
+                <option value="soir">Soir</option>
+              </optgroup>
+              <optgroup label="Dimanche">
+                <option value="Matin" disabled>Matin</option>
+                <option value="soir" disabled>Soir</option>
+              </optgroup>
+            </select>
+            <br />
+            <label for="message">Entrez votre message ici: </label>
+            <br />
+            <!-- zone de texte -->
+            <div class="center">
+              <textarea
+                name=""
+                id=""
+                cols="100"
+                rows="10"
+                placeholder="Bonjour,..."
+              ></textarea>
+            </div>
+            <br />
+            <!-- newsletter -->
+            <input type="checkbox" id="subscribe" name="subscribe" />
+            <label for="subscribe">Je m'inscris à la newsletter</label>
+            <br />
+            <!-- coupon -->
+            <label for="coupon"
+              >Votre coupon de réduction (.pdf uniquement)</label
+            >
+            <input
+              type="file"
+              name="coupon"
+              id="coupon"
+              accept=""
+              placeholder="Parcourir..."
+            />
+          </div>
+          <div class="center">
+            <!-- validation -->
+            <button type="submit" class="valid">Envoyer</button>
+            <button type="reset" class="valid">Annuler</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <h3>Informations</h3>
+    <p>site web <strong>Développeur back-End orienté DATA</strong></p>
+    <p><strong>Gaël Grange</strong>&copy</p>
+  </footer>
+</html>
